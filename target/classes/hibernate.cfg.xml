@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property
+                name="connection.url">jdbc:mysql://localhost:3306/horb_db?serverTimezone=UTC</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name = "hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">lop00100poly</property>
+
+        <mapping class="ua.lviv.iot.uklon.model.entity.Adress"/>
+        <mapping class="ua.lviv.iot.uklon.model.entity.City"/>
+        <mapping class="ua.lviv.iot.uklon.model.entity.CreditCard"/>
+        <mapping class="ua.lviv.iot.uklon.model.entity.Driver"/>
+        <mapping class="ua.lviv.iot.uklon.model.entity.Order"/>
+        <mapping class="ua.lviv.iot.uklon.model.entity.OrderState"/>
+        <mapping class="ua.lviv.iot.uklon.model.entity.OrderType"/>
+        <mapping class="ua.lviv.iot.uklon.model.entity.Passenger"/>
+        <mapping class="ua.lviv.iot.uklon.model.entity.Streets"/>
+        <mapping class="ua.lviv.iot.uklon.model.entity.Vehicle"/>
+    </session-factory>
+</hibernate-configuration>
